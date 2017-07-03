@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ToDoApplication</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="scripts\chart.js"></script>
+  </head>
+<body>
+    <div class="container">
+    <h2>Task Assignment Application</h2>
+    <form>Task Description:<br>
+      <input type="text" id="task_description"><br><br>
+      <fieldset>
+        <legend>Who is assigned to task?</legend>
+      <label>
+        <input type="radio" name="assignee" id="task_assignee1" value="Andy">Andy
+      </label>
+      <label>
+        <input type="radio" name="assignee" id="task_assignee2"  value="Anne">Anne
+      </label>
+      <label>
+        <input type="radio" name="assignee" id="task_assignee3" value="Jane">Jane
+      </label>
+      <label>
+        <input type="radio" name="assignee" id="task_assignee4" value="John">John
+      </label>
+      <label>
+        <input type="radio" name="assignee" id="task_assignee5" value="William">William
+      </label>
+     </fieldset><br><br>
+       <label>Indicate difficulty of task</label>
+          <select name=”difficulty” id="task_difficulty">
+         <option value="Easy">Easy</option>
+         <option value="Medium">Medium</option>
+         <option value="Hard">Hard</option>
+      </select><br><br>
+    </form>
+
+      <input type="button" id="btn" value="Add Task"/><br>
+
+            <p class="tasklist-heading">Tasks to be Completed</p>
+        <div>
+          <ul id="task_list">
+          </ul>
+        </div>
+        <div id="chart_div"></div>
+    </div>
+
+  <script src="scripts/todo.js"></script>
+
+  </body>
+</html>

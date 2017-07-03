@@ -1,0 +1,41 @@
+.tasklist-heading {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*background-image: url('styles/background.jpg');*/
+  background: #48c9b0;
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #FFFFFF;
+}
+#chart_div {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+#task_description {
+  width: 100%;
+}
+#task_list {
+  width: 500px;
+}
